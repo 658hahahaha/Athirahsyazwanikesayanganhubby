@@ -1,0 +1,222 @@
+```html
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Nurses Day Athirah Syazwani</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --medical-blue: #e0f2f1;
+            --heart-red: #ff4d6d;
+            --scrub-teal: #26a69a;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .cursive {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        /* Floating Animation */
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Medical Pulse Effect */
+        .pulse-line {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash 5s linear infinite;
+        }
+
+        @keyframes dash {
+            to { stroke-dashoffset: 0; }
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+        }
+
+        .heart-beat {
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            14% { transform: scale(1.1); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.1); }
+            70% { transform: scale(1); }
+        }
+
+        .scrub-button {
+            background-color: var(--scrub-teal);
+            transition: all 0.3s;
+        }
+
+        .scrub-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(38, 166, 154, 0.3);
+        }
+
+        /* Overlay for Operation Room vibe */
+        .or-light {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 50px;
+            height: 20px;
+            background: #ff0000;
+            border-radius: 5px;
+            box-shadow: 0 0 15px #ff0000;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Operation In Progress Indicator -->
+    <div class="or-light">IN LOVE</div>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col items-center justify-center relative px-4 overflow-hidden">
+        <svg class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" viewBox="0 0 1000 1000">
+            <path class="pulse-line" d="M0,500 L200,500 L250,300 L300,700 L350,500 L1000,500" fill="none" stroke="#26a69a" stroke-width="5" />
+        </svg>
+
+        <div class="z-10 text-center animate__animated animate__fadeInDown">
+            <div class="mb-6 floating">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#ff4d6d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto heart-beat">
+                    <path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 7.65l.77.78L12 20.69l7.65-7.65.77-.78a5.4 5.4 0 0 0 0-7.65z"></path>
+                </svg>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-2">Happy Nurses Day!</h1>
+            <p class="text-2xl md:text-3xl cursive text-teal-600 mb-8">Athirah Syazwani binti Azmi</p>
+            <p class="max-w-md mx-auto text-gray-600 italic">
+                "Keutamaan awak di Operation Room, tapi keutamaan saya hanyalah awak."
+            </p>
+            <a href="#wish" class="mt-10 inline-block scrub-button text-white px-8 py-3 rounded-full font-semibold">Buka Surat Cinta</a>
+        </div>
+    </section>
+
+    <!-- Wish Section -->
+    <section id="wish" class="py-20 px-4 bg-white">
+        <div class="max-w-3xl mx-auto glass-card p-8 md:p-12 shadow-2xl relative">
+            <!-- Decorative Medical Icons -->
+            <div class="absolute -top-6 -left-6 bg-teal-100 p-4 rounded-full shadow-lg">🩺</div>
+            <div class="absolute -bottom-6 -right-6 bg-pink-100 p-4 rounded-full shadow-lg">💊</div>
+
+            <h2 class="text-3xl font-bold mb-8 text-center text-teal-700">Warkah Buat Nurse Kesayangan Saya</h2>
+            
+            <div class="space-y-6 text-lg leading-relaxed text-gray-700">
+                <p>Assalamualaikum bakal isteri saya, <strong>Athirah Syazwani</strong>.</p>
+                
+                <p>Sempena Hari Jururawat ni, saya nak ambil peluang untuk cakap betapa bangganya saya dengan awak. Saya tahu kerja dekat <em>Operation Room</em> tu bukan senang. Penat berdiri lama, fokus yang tinggi, dan tanggungjawab yang besar untuk nyawa orang lain.</p>
+                
+                <p>Walaupun hari-hari awak sibuk dengan <em>scrub, forceps,</em> dan <em>gauze</em>, awak tak pernah lupa untuk jaga hati saya. Awak adalah 'nurse' yang paling hebat dalam hidup saya sebab awak berjaya 'operate' hati saya dan buang semua kesedihan, diganti dengan cinta awak.</p>
+                
+                <p>Terima kasih sebab jadi seorang yang sangat sabar, penyayang, dan berdedikasi. Saya janji, nanti bila kita dah sah jadi suami isteri, saya pula yang akan jadi 'nurse' peribadi awak dekat rumah—siapkan makan, urut kaki awak yang penat tu, dan pastikan awak sentiasa bahagia.</p>
+
+                <p class="cursive text-3xl text-pink-500 text-center py-6">"I Love You More Than Words Can Say, Sayang."</p>
+
+                <p class="text-right font-semibold">- Dari Kesayangan Awak ❤️</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gift Section -->
+    <section class="py-20 px-4 bg-teal-50">
+        <div class="max-w-md mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-6">Hadiah Claim Section 🎁</h2>
+            <div class="glass-card p-8 border-dashed border-2 border-teal-300">
+                <div id="gift-status" class="mb-4">
+                    <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full uppercase tracking-wider">Status: On The Way</span>
+                </div>
+                <p class="text-gray-600 mb-6">
+                    Sayang, hadiah untuk Nurses Day ni ada, tapi kena <strong>claim lambat sikit</strong> tau! Abang tengah prepare something special yang 'perfect' untuk awak.
+                </p>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-6">
+                    <div class="bg-teal-600 h-2.5 rounded-full" style="width: 75%"></div>
+                </div>
+                <button onclick="showSurprise()" class="w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 rounded-lg transition">
+                    Tekan Sini Untuk Janji!
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center text-gray-500 text-sm">
+        <p>© 2024 Created with Love for Athirah Syazwani</p>
+        <p class="mt-2">Counting days until you become my legal 'Nurse' forever 💍</p>
+    </footer>
+
+    <!-- Simple Custom Modal -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-2xl p-8 max-w-sm w-full text-center shadow-2xl">
+            <div class="text-5xl mb-4">🤝</div>
+            <h3 class="text-xl font-bold mb-2">Janji Diterima!</h3>
+            <p class="text-gray-600 mb-6">Sabar tau sayang. Nanti kita keluar sama-sama kita claim okay? I promise it's worth the wait!</p>
+            <button onclick="closeModal()" class="bg-teal-600 text-white px-6 py-2 rounded-lg">Okay Abang!</button>
+        </div>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById('modal').classList.remove('hidden');
+        }
+        function closeModal() {
+            document.getElementById('modal').classList.add('hidden');
+        }
+
+        // Add some floating hearts on click
+        document.addEventListener('click', function(e) {
+            const heart = document.createElement('div');
+            heart.innerHTML = '❤️';
+            heart.style.position = 'fixed';
+            heart.style.left = e.clientX + 'px';
+            heart.style.top = e.clientY + 'px';
+            heart.style.fontSize = '20px';
+            heart.style.pointerEvents = 'none';
+            heart.style.zIndex = '1000';
+            heart.classList.add('animate__animated', 'animate__fadeOutUp');
+            document.body.appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
+
+```
